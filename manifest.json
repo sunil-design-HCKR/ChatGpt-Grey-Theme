@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Grey Theme",
+  "version": "3.0",
+  "description": "Full grey theme for ChatGPT",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*"
+      ],
+      "css": ["style.css"],
+      "run_at": "document_start"
+    }
+  ]
+}

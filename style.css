@@ -1,0 +1,180 @@
+/* Main color */
+:root {
+    --grey-theme: #1f1f1f;
+    --grey-theme-2: #252525;
+    --grey-theme-3: #2b2b2b;
+}
+
+/* Everything */
+html,
+body,
+#__next,
+main,
+section,
+article,
+aside,
+nav,
+header,
+footer,
+div {
+    background: var(--grey-theme) !important;
+    border-color: #3a3a3a !important;
+}
+
+/* Sidebar */
+aside {
+    background: var(--grey-theme) !important;
+}
+
+/* Chat area */
+main {
+    background: var(--grey-theme) !important;
+}
+
+/* Messages */
+article,
+[data-message-author-role],
+.group {
+    background: var(--grey-theme) !important;
+}
+
+/* Input bar */
+textarea,
+form,
+[contenteditable="true"] {
+    background: var(--grey-theme-2) !important;
+    color: #ffffff !important;
+    border: 1px solid #444 !important;
+}
+
+/* Search bar */
+input {
+    background: var(--grey-theme-2) !important;
+    color: white !important;
+}
+
+/* Buttons */
+button {
+    background: var(--grey-theme-2) !important;
+    color: white !important;
+}
+
+button:hover {
+    background: var(--grey-theme-3) !important;
+}
+
+/* Text */
+* {
+    color: #e6e6e6 !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--grey-theme);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4a4a4a;
+    border-radius: 10px;
+}
+/* Remove all borders and separators */
+
+* {
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Chat list items */
+li,
+ol,
+ul {
+    border: none !important;
+}
+
+/* Conversation cards */
+[data-testid],
+article,
+section,
+nav,
+aside,
+div {
+    border: none !important;
+}
+
+/* Horizontal lines */
+hr {
+    display: none !important;
+}
+
+/* Pinned/Chats separators */
+.border,
+.border-t,
+.border-b,
+.border-l,
+.border-r,
+[class*="border"] {
+    border: none !important;
+}
+
+/* Remove card outlines */
+.rounded-xl,
+.rounded-2xl,
+.rounded-3xl {
+    border: none !important;
+}
+/* Remove input box border */
+
+form,
+textarea,
+[contenteditable="true"] {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Remove container border around input area */
+
+div:has(textarea),
+div:has([contenteditable="true"]) {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Remove all visible outlines */
+
+* {
+    outline: none !important;
+}
+/* Kill every border near the prompt area */
+
+form,
+form *,
+textarea,
+textarea *,
+[role="textbox"],
+[role="textbox"] * {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+/* ChatGPT prompt bar */
+
+form {
+    background: transparent !important;
+}
+
+form div {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+[role="textbox"] {
+    background: #1f1f1f !important;
+    border-radius: 999px !important;
+    padding: 14px 18px !important;
+    color: white !important;
+}
